@@ -25,7 +25,7 @@ const UpdateModal = () => {
   React.useEffect(() => {
     async function getData() {
       const res = await fetch(
-        `http://localhost:8000/api/activity/member/exercise_activity/${id}`,
+        `https://light-helmet.cyclic.app/api/activity/member/exercise_activity/${id}`,
         {
           method: "GET",
 
@@ -84,7 +84,7 @@ const UpdateModal = () => {
     data1.append('exe_ac_date',exe_ac_date);
     data1.append('exe_ac_img', document.getElementById("exe_ac_img").files[0]);
       const updateItems = await fetch(
-        `http://localhost:8000/api/activity/member/edit_exercise_activity/` +
+        `https://light-helmet.cyclic.app/api/activity/member/edit_exercise_activity/` +
           id,
         {
           method: "PUT",
