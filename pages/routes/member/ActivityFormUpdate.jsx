@@ -15,6 +15,7 @@ const ActivityFormUpdate = () => {
         const res = await fetch(
           "https://light-helmet.cyclic.app/api/activity/member/exercise_activity",
           {
+            
             method: "GET",
   
             headers: {
