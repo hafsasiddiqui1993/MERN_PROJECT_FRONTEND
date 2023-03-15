@@ -12,7 +12,7 @@ function ActivityFormRead() {
   React.useEffect(() => {
     async function getData() {
       const res = await fetch(
-        "http://localhost:8000/api/activity/member/exercise_activity",
+        "https://light-helmet.cyclic.app//api/activity/member/exercise_activity",
         {
           method: "GET",
 
@@ -34,7 +34,7 @@ function ActivityFormRead() {
   async function deleteItem(id) {
     console.log(id);
     const deleteItems = await fetch(
-      "http://localhost:8000/api/activity/member/exercise_activity/delete/" +
+      "https://light-helmet.cyclic.app/api/activity/member/exercise_activity/delete/" +
         id,
       {
         method: "DELETE",
@@ -44,7 +44,7 @@ function ActivityFormRead() {
       }
     );
     const res = await fetch(
-      "http://localhost:8000/api/activity/member/exercise_activity",
+      "https://light-helmet.cyclic.app/api/activity/member/exercise_activity",
       {
         method: "GET",
 
@@ -94,7 +94,7 @@ function ActivityFormRead() {
             <td>{item.exe_ac_type}</td>
             <td>{item.exe_ac_dur}</td>
             <td>{item.exe_ac_date}</td>
-            <td> <img src={"http://localhost:8000/"+item.exe_ac_img} width={80}/></td>
+            <td> <img src={"https://light-helmet.cyclic.app/"+item.exe_ac_img} width={80}/></td>
 
             <td>
               <div variant="primary">
