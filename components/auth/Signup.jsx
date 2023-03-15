@@ -67,7 +67,9 @@ function Signup() {
 
     try {
       const res = await fetch("https://light-helmet.cyclic.app/api/member/register", {
-        method: "POST",
+        mode: 'no-cors',
+  
+      method: "POST",
 
         headers: {
           "Content-Type": "application/json",
