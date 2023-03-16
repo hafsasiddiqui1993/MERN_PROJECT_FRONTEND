@@ -541,3 +541,246 @@ img.notfoun {
   border-color: beige !important;
   background: #4835d4 !important;
 }
+
+/*Responsive Mobile Screen */
+
+@media only screen and (max-width: 546px) {
+  .navdiv {
+    width: 80em;
+    margin: 0em 0em 0em 0em;
+    position: absolute;
+}
+
+a.homenav {
+    color: #e8e8e8;
+    margin: 2em -5em 1em 7em;
+ }
+
+h1.ft2 {
+    font-size: 1.7em;
+    margin: -5em 0em 4em 1em;
+}
+
+h1.ft1 {
+    font-size: 1.4em;
+    margin: -9em 0em 0em 1em;
+
+}
+
+h1.ft {
+    margin: -1em 0em 0em 1.2em;
+    position: absolute;
+    font-family: Lord;
+    font-size: 1.2em;
+    color: #4835d4;
+    font-weight: bolder;
+}
+
+
+img.img3 {
+    /* margin: 5em; */
+    margin: 10em 0em -1em 2em;
+    position: absolute;
+}
+
+
+.carousel.slide {
+    margin: -10em -60em 0em 0em;
+
+    height: 30em;
+    /* display: list-item; */
+}
+
+
+h1.ft3 {
+    margin: 2.5em 0em 0em 9em;
+}
+
+img.img4 {
+    width: 18em;
+    height: 18em;
+    margin: 10em 0em 24em 58em;
+}
+
+
+img.img1 {
+    width: 130%;
+    /* position: absolute; */
+    height: 50%;
+    /* border-radius: 35em; */
+    border-radius: 4px 14px 22px 240px/252px;
+}
+
+.divparahome {
+    margin: -6em 0em 1em 0em !important;
+}
+
+
+
+h1.exeh1 {
+    font-size: 4.2em;
+    font-family: Lord;
+    font-weight: 600;
+    color: #4835d4;
+    margin: 0em 0em 4em 5.2em;
+}
+
+
+section.sec1 {
+    margin: -10em 0em 0em 1em;
+}
+
+
+p.shadow {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: Quicksand;
+    margin-top: 3em;
+    color: orange;
+    width: 14em;
+    height: 10em;
+}
+
+card {
+    margin-bottom: 21em;
+    width: 198% !important;
+}
+
+h1.aportfolio {
+    margin: -3em 0em 1em 3em;
+    font-family: Lord;
+    font-size: 4em;
+    font-weight: bolder;
+    color: #4835d4;
+}
+
+.imgsdivs {
+    
+    margin: -2em 0em 0em 9em;
+
+}
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .navdiv {
+    width: 80em;
+    margin: 0em 0em 0em 0em;
+    position: absolute;
+}
+
+a.homenav {
+    color: #e8e8e8;
+    margin: 2em -5em 1em 7em;
+ }
+
+h1.ft2 {
+    font-size: 1.7em;
+    margin: -5em 0em 4em 1em;
+}
+
+h1.ft1 {
+    font-size: 1.4em;
+    margin: -9em 0em 0em 1em;
+
+}
+
+h1.ft {
+    margin: -1em 0em 0em 1.2em;
+    position: absolute;
+    font-family: Lord;
+    font-size: 1.2em;
+    color: #4835d4;
+    font-weight: bolder;
+}
+
+
+img.img3 {
+    /* margin: 5em; */
+    margin: 10em 0em -1em 2em;
+    position: absolute;
+}
+
+
+.carousel.slide {
+    margin: -10em -60em 0em 0em;
+
+    height: 30em;
+    /* display: list-item; */
+}
+
+
+h1.ft3 {
+    margin: 2.5em 0em 0em 9em;
+}
+
+img.img4 {
+    width: 18em;
+    height: 18em;
+    margin: 10em 0em 24em 58em;
+}
+
+
+img.img1 {
+    width: 130%;
+    /* position: absolute; */
+    height: 50%;
+    /* border-radius: 35em; */
+    border-radius: 4px 14px 22px 240px/252px;
+}
+
+.divparahome {
+    margin: -6em 0em 1em 0em !important;
+}
+
+
+
+h1.exeh1 {
+    font-size: 4.2em;
+    font-family: Lord;
+    font-weight: 600;
+    color: #4835d4;
+    margin: 0em 0em 4em 5.2em;
+}
+
+
+section.sec1 {
+    margin: -10em 0em 0em 1em;
+}
+
+
+p.shadow {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: Quicksand;
+    margin-top: 3em;
+    color: orange;
+    width: 14em;
+    height: 10em;
+}
+
+card {
+    margin-bottom: 21em;
+    width: 198% !important;
+}
+
+h1.aportfolio {
+    margin: -3em 0em 1em 3em;
+    font-family: Lord;
+    font-size: 4em;
+    font-weight: bolder;
+    color: #4835d4;
+}
+
+.imgsdivs {
+    
+    margin: -2em 0em 0em 9em;
+
+}
+}
