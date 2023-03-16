@@ -47,7 +47,7 @@ try{
 console.log("hello");
 console.log(document.getElementById("exe_ac_img").files)
     data1.append('exe_ac_img', document.getElementById("exe_ac_img").files[0]);
-const res = await fetch("https://light-helmet.cyclic.app/api/activity/member/exercise_activity",{
+const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/activity/member/exercise_activity",{
 method: "POST",
 
 headers:{

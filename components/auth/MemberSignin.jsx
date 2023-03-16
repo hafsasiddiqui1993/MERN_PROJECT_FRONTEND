@@ -51,7 +51,7 @@ function MemberSignin() {
     const { m_email, m_pass } = member;
     console.log(member);
     try {
-      const res = await fetch("https://light-helmet.cyclic.app/api/auth/login", {
+      const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/auth/login", {
         method: "POST",
 
         headers: {

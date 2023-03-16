@@ -21,7 +21,7 @@ const HandleChange = async(e) => {
 React.useEffect(()=>{
     async function getmemberData(){
         const res = await fetch(
-          `https://light-helmet.cyclic.app/api/member/registers?id=${id}`,
+          `https://real-red-shrimp-cuff.cyclic.app/api/member/registers?id=${id}`,
 
             {   
                 headers:{
@@ -57,13 +57,13 @@ const updatememberItem = async(e) => {
     e.preventDefault();
     const {m_fullname,m_add,m_ph,m_email,m_pass} = memberUpdate;
     console.log("Member Updated Data", m_fullname,m_add,m_ph,m_email,m_pass)
-    //  console.log(`https://light-helmet.cyclic.app/api/member/member/editprofile/`+id)
+    //  console.log(`https://real-red-shrimp-cuff.cyclic.app/api/member/member/editprofile/`+id)
 
     try{
         const updatedmember = await fetch(
-          `https://light-helmet.cyclic.app/api/member/member/editprofile/`+id,
+          `https://real-red-shrimp-cuff.cyclic.app/api/member/member/editprofile/`+id,
 
-          //  `https://light-helmet.cyclic.app/api/member/member/editprofile/${id}`,
+          //  `https://real-red-shrimp-cuff.cyclic.app/api/member/member/editprofile/${id}`,
            
       {
         method: "PUT",

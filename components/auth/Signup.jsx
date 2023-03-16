@@ -66,7 +66,7 @@ function Signup() {
     const { m_fullname, m_add, m_ph, m_email, m_pass } = member;
 
     try {
-      const res = await fetch("https://light-helmet.cyclic.app/api/member/register", {
+      const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/member/register", {
         mode: 'no-cors',
   
       method: "POST",
