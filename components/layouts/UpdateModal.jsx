@@ -88,7 +88,13 @@ const UpdateModal = () => {
             Tokenization: localStorage.getItem("Token"),
             
           },
-          body: data1,
+           body: JSON.stringify({
+            exe_ac_name: updateData.exe_ac_name,
+            exe_ac_desc: updateData.exe_ac_desc,
+            exe_ac_type: updateData.exe_ac_type,
+            exe_ac_dur: updateData.exe_ac_dur,
+            exe_ac_date: updateData.exe_ac_date,
+          }),
         }
       );
 
