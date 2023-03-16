@@ -66,7 +66,7 @@ function MemberSignin() {
       const result = await res.json();
       window.localStorage.setItem("Token", result.Token);
 
-      window.location.replace("http://localhost:5173/");
+      window.location.replace(myurl);
       console.log(result.Token);
     } catch (e) {
       alert("Email Or Password Wrong!");
