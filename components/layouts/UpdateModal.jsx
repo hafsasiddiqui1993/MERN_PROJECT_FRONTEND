@@ -86,6 +86,7 @@ const UpdateModal = () => {
           method: "PUT",
           headers: {
             Tokenization: localStorage.getItem("Token"),
+            "Content-Type": "application/json"
             
           },
            body: JSON.stringify({
