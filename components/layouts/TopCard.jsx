@@ -7,7 +7,7 @@ function TopCard() {
 
 
     <div className='imagesblck'>
-     <img className='img1' src='../src/assets/photos/cv0.png'> 
+     <img className='img1' src='https://media.wired.com/photos/61bbdcc0b540f6bc340c442f/1:1/w_1091,h_1091,c_limit/Games-Exercise-Games-Zwift-345014-zwift-photo-cycling-01-f043ea-original-1581356759.jpg'> 
      </img> 
      
      <div className='divparahome'> 
@@ -23,11 +23,11 @@ function TopCard() {
      <br></br> Be Smart Be Productive <br></br> make it for daily routine.
      </h1>
      </div>
-     <img className='img3' src='../src/assets/photos/61QEWIMXGbL._SX522_.jpg'>
+     <img className='img3' src='https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61QEWIMXGbL._SX522_.jpg'>
         
     </img><h1 className='ft3'>Remind yourself,  Daily Reminder</h1>
 
-    <img className="img4" src="../src/assets/photos/877332-Gymnastics-Yoga-Pose-Workout.jpg"></img>
+    <img className="img4" src="https://rare-gallery.com/thumbs/877332-Gymnastics-Yoga-Pose-Workout.jpg"></img>
      
 
     </div>

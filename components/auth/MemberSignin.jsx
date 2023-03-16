@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
-
+import myurl from "../../public/routes"
 function MemberSignin() {
   const [form, setForm] = useState({});
   const [errors, setErrors] = useState({});
@@ -51,7 +51,7 @@ function MemberSignin() {
     const { m_email, m_pass } = member;
     console.log(member);
     try {
-      const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/auth/login", {
+      const res = await fetch(myurl+"api/auth/login", {
         method: "POST",
 
         headers: {

@@ -17,7 +17,7 @@ function Slider() {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="../src/assets/photos/slider2.jpeg"
+          src="https://cdn.shopify.com/s/files/1/1153/7200/articles/Benefits_of_resistance_training-squashed.jpg?v=1611347378"
         />
         <Carousel.Caption>
          
@@ -26,7 +26,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../src/assets/photos/slider3.jpg"
+          src="https://www.cedars-sinai.org/content/dam/cedars-sinai/blog/2021/7/exercise-caution.jpg"
           
         />
         

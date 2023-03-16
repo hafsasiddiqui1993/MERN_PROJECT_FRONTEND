@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import { MdModeEditOutline } from "react-icons/md";
 import UpdateModal from "../../../components/layouts/UpdateModal"
+import myurl from "../../../public/routes"
 
 import { useState } from "react";
 
@@ -13,7 +14,7 @@ const ActivityFormUpdate = () => {
     React.useEffect(() => {
       async function getData() {
         const res = await fetch(
-          "https://real-red-shrimp-cuff.cyclic.app/api/activity/member/exercise_activity",
+          myurl+"api/activity/member/exercise_activity",
           {
             
             method: "GET",
@@ -36,7 +37,7 @@ const ActivityFormUpdate = () => {
     async function updateItem(id) {
       console.log(id);
       const updateItems = await fetch(
-        "https://real-red-shrimp-cuff.cyclic.app/api/activity/member/edit_exercise_activity/" +
+        myurl+"api/activity/member/edit_exercise_activity/" +
           id,
         {
           method: "PUT",
@@ -46,7 +47,7 @@ const ActivityFormUpdate = () => {
         }
       );
       const res = await fetch(
-        "https://real-red-shrimp-cuff.cyclic.app/api/activity/member/exercise_activity",
+        myurl+"api/activity/member/exercise_activity",
         {
           method: "GET",
   
@@ -86,7 +87,6 @@ const ActivityFormUpdate = () => {
               <td>{item.exe_ac_type}</td>
               <td>{item.exe_ac_dur}</td>
               <td>{item.exe_ac_date}</td>
-              <td> <img src={"https://real-red-shrimp-cuff.cyclic.app/"+item.exe_ac_img} width={80}/></td>
 
               <td>
                 

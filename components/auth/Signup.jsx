@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Helmet } from "react-helmet";
 import { useState } from "react";
+import myurl from "../../public/routes"
 
 function Signup() {
   const [form, setForm] = useState({});
@@ -29,25 +30,25 @@ function Signup() {
   };
 
   const findFormErrors = () => {
-    const { name, add, ph, email, pass } = errors;
+    const { m_fullname, m_add, m_ph, m_email, m_pass } = member;
 
     const newErrors = {};
-    if (!name || name === "") newErrors.name = "Enter your Name!";
+    if (!m_fullname || m_fullname === "") newErrors.m_fullname = "Enter your Name!";
 
-    if (!add || add === "") newErrors.add = "Enter your Address!";
+    if (!m_add || m_add === "") newErrors.m_add = "Enter your Address!";
 
-    if (!ph || ph === "" || ph.length === 11)
-      newErrors.ph =
+    if (!m_ph || m_ph === "" || m_ph.length === 11)
+      newErrors.m_ph =
         "Enter your Phone, Phone Number Should be valid, 11 digits";
 
     if (
-      !email ||
-      email === "" ||
-      email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
+      !m_email ||
+      m_email === "" ||
+      m_email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
     )
-      newErrors.email = "Enter your valid Email";
-    if (!pass || pass === "" || pass.match(/^[a-zA-Z]{8,22}$/))
-      newErrors.pass = "Only Letters and length must best Max 8 Chracters";
+      newErrors.m_email = "Enter your valid Email";
+    if (!m_pass || m_pass === "" || m_pass.match(/^[a-zA-Z]{8,22}$/))
+      newErrors.m_pass = "Only Letters and length must best Max 8 Chracters";
 
     return newErrors;
   };
@@ -62,12 +63,17 @@ function Signup() {
 
   const MemberData = async (e) => {
     e.preventDefault();
+    const ClientErrors = findFormErrors();
+
+   if (Object.keys(ClientErrors).length > 0) {
+    setErrors(ClientErrors);
+    return
+   }
 
     const { m_fullname, m_add, m_ph, m_email, m_pass } = member;
 
     try {
-      const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/member/register", {
-        mode: 'no-cors',
+      const res = await fetch(myurl+"api/member/register", {
   
       method: "POST",
 
@@ -90,9 +96,9 @@ function Signup() {
       // debugger
       if (data.errors) {
         //We got errors!
-        const serverErors = findFormErrors(data.errors);
+        
         data.errors.map((error) => alert(error.msg));
-        setErrors(newErrors);
+        
       } else {
         alert("user registered");
       }
@@ -119,11 +125,12 @@ function Signup() {
             type="text"
             placeholder="Enter Full Name"
             onChange={(e) => setField("name", e.target.value)}
-            isInvalid={!!errors.name}
+            isInvalid={!!errors.m_fullname}
           />
 
           <Form.Control.Feedback type="invalid">
-            {errors.name}
+            {errors.m_fullname}     
+
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="lblactvty">
@@ -136,11 +143,11 @@ function Signup() {
             type="text"
             placeholder="Enter Address"
             onChange={(e) => setField("add", e.target.value)}
-            isInvalid={!!errors.add}
+            isInvalid={!!errors.m_add}
           />
 
           <Form.Control.Feedback type="invalid">
-            {errors.add}
+            {errors.m_add}
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group className="lblactvty">
@@ -153,11 +160,11 @@ function Signup() {
             type="text"
             placeholder="Enter Phone"
             onChange={(e) => setField("ph", e.target.value)}
-            isInvalid={!!errors.ph}
+            isInvalid={!!errors.m_ph}
           />
 
           <Form.Control.Feedback type="invalid">
-            {errors.ph}
+            {errors.m_ph}
           </Form.Control.Feedback>
         </Form.Group>
 
@@ -171,11 +178,11 @@ function Signup() {
             type="email"
             placeholder="Enter Email"
             onChange={(e) => setField("email", e.target.value)}
-            isInvalid={!!errors.email}
+            isInvalid={!!errors.m_email}
           />
 
           <Form.Control.Feedback type="invalid">
-            {errors.email}
+            {errors.m_email}
           </Form.Control.Feedback>
         </Form.Group>
 
@@ -189,10 +196,10 @@ function Signup() {
             required
             placeholder="Enter Password"
             onChange={(e) => setField("pass", e.target.value)}
-            isInvalid={!!errors.pass}
+            isInvalid={!!errors.m_pass}
           />
           <Form.Control.Feedback type="invalid">
-            {errors.pass}
+            {errors.m_pass}
           </Form.Control.Feedback>
         </Form.Group>
 

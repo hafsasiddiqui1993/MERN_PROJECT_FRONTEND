@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Form, Col, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-
+import myurl from "../../public/routes"
 const UpdateModal = () => {
   const [updateData, setupdateData] = useState({
     exe_ac_name: "",
@@ -10,7 +10,6 @@ const UpdateModal = () => {
     exe_ac_type: "",
     exe_ac_dur: "",
     exe_ac_date: "",
-    exe_ac_img: "",
   });
 
   const { id } = useParams();
@@ -25,7 +24,7 @@ const UpdateModal = () => {
   React.useEffect(() => {
     async function getData() {
       const res = await fetch(
-        `https://real-red-shrimp-cuff.cyclic.app/api/activity/member/exercise_activity/${id}`,
+        myurl+`api/activity/member/exercise_activity/${id}`,
         {
           method: "GET",
 
@@ -63,7 +62,6 @@ const UpdateModal = () => {
       exe_ac_type,
       exe_ac_dur,
       exe_ac_date,
-      exe_ac_img,
     } = updateData;
     console.log(
       "Update Data",
@@ -72,7 +70,6 @@ const UpdateModal = () => {
       exe_ac_type,
       exe_ac_dur,
       exe_ac_date,
-      exe_ac_img
     );
 
     try {
@@ -82,9 +79,8 @@ const UpdateModal = () => {
     data1.append('exe_ac_type',exe_ac_type);
     data1.append('exe_ac_dur',exe_ac_dur);
     data1.append('exe_ac_date',exe_ac_date);
-    data1.append('exe_ac_img', document.getElementById("exe_ac_img").files[0]);
       const updateItems = await fetch(
-        `https://real-red-shrimp-cuff.cyclic.app/api/activity/member/edit_exercise_activity/` +
+        myurl+`api/activity/member/edit_exercise_activity/` +
           id,
         {
           method: "PUT",
@@ -182,18 +178,7 @@ const UpdateModal = () => {
           />
         </Form.Group>
 
-        <Form.Group className="lblactvtyimg">
-          <Form.Control 
-            className="lblactvtyimg"
-            id="exe_ac_img"
-            name="exe_ac_img"
-            value={updateData.exe_ac_img}
-            type="file" 
-            size="lg"
-            placeholder="Upload Exercise Activity Image" 
-            onChange={HandleInputChange}
-          />
-        </Form.Group>
+       
         <Button
           className="actvty-btn"
           onClick={updateItem}

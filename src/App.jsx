@@ -1,11 +1,11 @@
-import "../styles/global.css";
-import "../styles/TopCard.css";
-import "../styles/Cards.css";
-import "../styles/Dashboard.css";
-import "../styles/Nav.css";
-import "../styles/OffCanvas.css";
-import "../styles/Sign.css";
-import "../styles/Signup.css";
+import "../public/css/global.css";
+import "../public/css/TopCard.css";
+import "../public/css/Cards.css";
+import "../public/css/Dashboard.css";
+import "../public/css/Nav.css";
+import "../public/css/OffCanvas.css";
+import "../public/css/Sign.css";
+import "../public/css/Signup.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "../pages/index";

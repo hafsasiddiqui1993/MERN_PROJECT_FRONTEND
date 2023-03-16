@@ -20,11 +20,11 @@ export const Cards = () => {
             </br>
             Explore more...
         </p>
-        <img className='rn' src='../src/assets/photos/istockphoto-1131136362-170667a.jpg'></img>
+        <img className='rn' src='https://samitivej-prod-new-website.s3.ap-southeast-1.amazonaws.com/public/uploads/descriptions/a13b6878c56fc4f2e83338ab4ca98496.jpg'></img>
     <Col sm>
 
 <Card style={{ width: '18rem' }}>
- <Card.Img variant="top" src="../src/assets/photos/runnersguidegym-2.jpg" />
+ <Card.Img variant="top" src="https://i.insider.com/604bb74710c8760018b92fb3?width=700" />
  <Card.Body>
    <Card.Title>Run</Card.Title>
    <Card.Text>
@@ -49,11 +49,11 @@ export const Cards = () => {
             </br>
           
         </p>
-     <img className='rn' src='../src/assets/photos/istockphoto-1213656577-612x612.jpg'></img>
+     <img className='rn' src='https://www.liberty.edu/campusrec/wp-content/uploads/sites/191/2021/07/Nikki-e1627310081772.jpg'></img>
 
      <Col>
      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="../src/assets/photos/bicycle.jpg" />
+      <Card.Img variant="top" src="https://www.healthcanal.com/wp-content/uploads/Benefits-Of-Riding-On-Stationary-Bike.jpg" />
       <Card.Body>
         <Card.Title>Bicycle Ride</Card.Title>
         <Card.Text>
@@ -77,11 +77,11 @@ export const Cards = () => {
             </br>
             
         </p>
-     <img className='rn' src='../src/assets/photos/Is-it-okay-to-swim-after-going-to-the-gym.jpg'></img>
+     <img className='rn' src='http://images.summitmedia-digital.com/esquiremagph/images/2017/09/29/exercise-money.jpg'></img>
 
      <Col>
      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="../src/assets/photos/swim1.jpg" />
+      <Card.Img variant="top" src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_35/2139841/170831-stock-better-running-treadmill-ew-249p.jpg" />
       <Card.Body>
         <Card.Title>Swim</Card.Title>
         <Card.Text>
@@ -106,12 +106,12 @@ export const Cards = () => {
             A new member? no problem scroll up and Sign-up <br>
             </br>
         </p>
-      <img className='rn' src='../src/assets/photos/cardio-workouts-for-weight-loss-9ab91dc826a74d0788ada9e3aebd9ebb.jpg'></img>
+      <img className='rn' src='https://fitbod.me/wp-content/uploads/2021/07/Weight-Training.jpg'></img>
 
       <Col sm>
 
 <Card style={{ width: '18rem' }}>
- <Card.Img variant="top" src="../src/assets/photos/walking.jpg" />
+ <Card.Img variant="top" src="https://www.changeinseconds.com/wp-content/uploads/2015/07/30-Day-Walking-Exercise.jpg" />
  <Card.Body>
    <Card.Title>Walk</Card.Title>
    <Card.Text>
@@ -136,11 +136,11 @@ export const Cards = () => {
             </br>
           
         </p>
-    <img className='rn' src='../src/assets/photos/vzgliad-poza-fitnes-muscle-myshtsy-press-atlet-trenazhery--2.jpg'></img>
+    <img className='rn' src='https://www.gore-tex.com/sites/default/files/blog_images/exercises-for-hiking-690x398.jpg'></img>
 
     <Col sm>
      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="../src/assets/photos/hike.jpg" />
+      <Card.Img variant="top" src="https://www.heart.org/-/media/Healthy-Living-Images/Fitness/runner_tying_shoe.jpg" />
       <Card.Body>
         <Card.Title>Hike</Card.Title>
         <Card.Text>

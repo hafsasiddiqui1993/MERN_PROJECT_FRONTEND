@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import myurl from "../../../public/routes"
 
 import { useState } from 'react';
 
@@ -8,8 +9,7 @@ function ActivityForm() {
 
   const [activity, setactivity] = useState({
    
-  exe_ac_name:"", exe_ac_desc:"", exe_ac_type:"",exe_ac_dur:"",exe_ac_date:"",exe_ac_img:""
-  
+  exe_ac_name:"", exe_ac_desc:"", exe_ac_type:"",exe_ac_dur:"",exe_ac_date:""
 
   });
 
@@ -30,7 +30,7 @@ const ActivityData = async (e) => {
 
 
 
-const {exe_ac_name,exe_ac_desc,exe_ac_type,exe_ac_dur,exe_ac_date,exe_ac_img} = activity;
+const {exe_ac_name,exe_ac_desc,exe_ac_type,exe_ac_dur,exe_ac_date} = activity;
 console.log(activity)
 
 try{
@@ -44,34 +44,34 @@ try{
     data1.append('exe_ac_dur',exe_ac_dur);
     data1.append('exe_ac_date',exe_ac_date);
 
-console.log("hello");
-console.log(document.getElementById("exe_ac_img").files)
-    data1.append('exe_ac_img', document.getElementById("exe_ac_img").files[0]);
-const res = await fetch("https://real-red-shrimp-cuff.cyclic.app/api/activity/member/exercise_activity",{
+console.log()
+const res = await fetch(myurl+"api/activity/member/exercise_activity",{
 method: "POST",
 
 headers:{
 
   
-  'Tokenization': localStorage.getItem('Token')
+  'Tokenization': localStorage.getItem('Token'),
+  "Content-type":"application/json"
 
 },
-body: data1
+body: JSON.stringify(activity)
 });
 const data = await res.json();
+console.log("data")
 console.log(data)
 
 
 
-if(res.status === 404 || !res){
-  window.alert("invalid");
+// if(res.status === 404 || !res){
+//   window.alert("invalid");
 
-} else {
+// } else {
   window.alert("Activity Successfully Add!");
-}
+// }
 
 } catch(e){
-  console.log(e)
+  // console.log(e)
 }
 }
 
@@ -88,7 +88,7 @@ if(res.status === 404 || !res){
           <Form.Control                                                                                                                                            
           id="exe_ac_name"
           name="exe_ac_name"
-          type="text" placeholder="Exercise Activity Name" required  />
+          type="text" placeholder="Exercise Activity Name" />
         </Form.Group>
  
           
@@ -97,7 +97,7 @@ if(res.status === 404 || !res){
           <Form.Control 
            id="exe_ac_desc"
            name="exe_ac_desc"
-          type="text" placeholder="Exercise Activity Description" required />
+          type="text" placeholder="Exercise Activity Description"  />
         </Form.Group>
   
         
@@ -108,7 +108,7 @@ if(res.status === 404 || !res){
           <Form.Control 
            id="exe_ac_type"
            name="exe_ac_type"
-          type="hidden" placeholder="Exercise Activity Type" required />
+          type="hidden" placeholder="Exercise Activity Type"  />
           <Form.Select defaultValue="Choose..." name="exe_ac_type">
             <option>Choose Activity Type</option>
             <option>Run</option>
@@ -126,7 +126,7 @@ if(res.status === 404 || !res){
           <Form.Control
            id="exe_ac_dur"
            name="exe_ac_dur"
-          type="hidden" placeholder="Exercise Activity Type" required />
+          type="hidden" placeholder="Exercise Activity Type" />
           <Form.Select defaultValue="Choose..."  name="exe_ac_dur">
             
             <option>Choose Exercise Activity Duration</option>
@@ -147,15 +147,10 @@ if(res.status === 404 || !res){
           <Form.Control className='lblactvty'
            id="exe_ac_date"
            name="exe_ac_date"
-          type="date" placeholder="Exercise Activity Date" required />
+          type="date" placeholder="Exercise Activity Date"  />
         </Form.Group>
 
-        <Form.Group className='lblactvtyimg'>
-        <Form.Control className='lblactvtyimg'
-         id="exe_ac_img"
-         name="exe_ac_img"
-        type="file" size="lg" placeholder="Upload Exercise Activity Image"   />
-      </Form.Group>
+        
 
       <Button className='actvty-btn'  onClick={ActivityData} value="ActivityForm" variant="primary" type="submit">
         Submit

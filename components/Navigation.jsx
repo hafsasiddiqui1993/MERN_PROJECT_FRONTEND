@@ -5,11 +5,7 @@ const Navigation = ({ login }) => {
     <div className="navdiv">
      
       <>
-
-
-      <Link className="homenavhome" to="/">
-        Home
-      </Link>
+      <Link className="homenavhome" to="/"> Home</Link>
         {login ? (
           <>
             <div className="dvnv2">

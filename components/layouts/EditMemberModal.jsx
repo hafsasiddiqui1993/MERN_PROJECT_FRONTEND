@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form,Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import myurl from "../../public/routes"
 
 export default function EditMemberModal() {
 
@@ -21,7 +22,7 @@ const HandleChange = async(e) => {
 React.useEffect(()=>{
     async function getmemberData(){
         const res = await fetch(
-          `https://real-red-shrimp-cuff.cyclic.app/api/member/registers?id=${id}`,
+          myurl+`api/member/registers?id=${id}`,
 
             {   
                 headers:{
@@ -61,7 +62,7 @@ const updatememberItem = async(e) => {
 
     try{
         const updatedmember = await fetch(
-          `https://real-red-shrimp-cuff.cyclic.app/api/member/member/editprofile/`+id,
+          myurl+`api/member/member/editprofile/`+id,
 
           //  `https://real-red-shrimp-cuff.cyclic.app/api/member/member/editprofile/${id}`,
            
@@ -104,7 +105,7 @@ const updatememberItem = async(e) => {
 
   return (
     <body className='editbdy'>
-    <img className='ediproimg' src='../../src/assets/photos/7aa28b90-1fb4-11ec-bbff-102b321bbc00.cf.jpg'></img>
+    <img className='ediproimg' src='https://i.pinimg.com/736x/9b/97/a5/9b97a5c89b5dec92b69511b90c0915e3.jpg'></img>
     <Form className="editpro" onChange={(e) => HandleChange(e)}>
         
     <Form.Group className="mb-3">

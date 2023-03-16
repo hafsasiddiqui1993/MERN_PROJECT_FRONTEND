@@ -6,7 +6,7 @@ import EditMemberModal from "./EditMemberModal";
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-
+import myurl from "../../public/routes"
 function DashboardHead() {
   const [memberReg, setmemberReg] = useState([]);
   //  const { id } = useParams();
@@ -17,7 +17,7 @@ function DashboardHead() {
 
   async function getData() {
     console.log(1);
-    const res = await fetch("http://localhost:8000/api/member/registers", {
+    const res = await fetch(myurl+"api/member/registers", {
       method: "GET",
 
       headers: {
@@ -33,7 +33,7 @@ function DashboardHead() {
   async function updateItem(id) {
     console.log(id);
     const updateItems = await fetch(
-      "http://localhost:8000/api/member/member/editprofile/" + id,
+      myurl+"api/member/member/editprofile/" + id,
       {
         method: "PUT",
         headers: {
@@ -42,7 +42,7 @@ function DashboardHead() {
       }
     );
 
-    const res = await fetch("http://localhost:8000/api/member/registers", {
+    const res = await fetch(myurl+"api/member/registers", {
       method: "GET",
 
       headers: {
@@ -94,7 +94,7 @@ function DashboardHead() {
             <Card.Img
               className="imgdv"
               variant="top"
-              src="../src/assets/photos/ConsideratePresentChameleon-size_restricted.gif"
+              src="https://images.medicinenet.com/images/article/main_image/what-should-my-heart-rate-be.jpg"
             />
 
             {/* </Card> */}
@@ -103,7 +103,7 @@ function DashboardHead() {
             <Card className="crddash1" style={{ width: "18rem" }}>
               <Card.Img
                 variant="top"
-                src="../src/assets/photos/e5e2d9880dc2e43d1f5cc8bf1b0a0a52.jpg"
+                src="https://scied.ucar.edu/sites/default/files/media/images/weather_0.jpg"
               />
               <Card.Body className="crdbdy01">
                 <Card.Text className="crdbd1">
@@ -133,7 +133,7 @@ function DashboardHead() {
                 width={171}
                 height={180}
                 alt="171x180"
-                src="../src/assets/photos/Screen Shot 2021-06-04 at 11.17.26 AM.png"
+                src="https://i.pcmag.com/imagery/roundups/0634CGyLGOHgKlIbVidl2zZ-38..v1665161097.jpg"
               />
             </Figure>
           </Col>
