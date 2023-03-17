@@ -158,7 +158,7 @@ const updatememberItem = async(e) => {
           <Form.Control className='editcntrlpro'
           id="m_pass"
           name="m_pass"
-          type="password" required  placeholder="Enter Password" 
+          type="password"  placeholder="Enter Password" 
           value={memberUpdate.m_pass}
           onChange={setmemberUpdate}
 
