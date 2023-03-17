@@ -544,7 +544,7 @@ img.notfoun {
 
 /*Responsive Mobile Screen */
 
-@media only screen and (max-width: 546px) {
+@media  (max-width: 546px) {
   .navdiv {
     width: 80em;
     margin: 0em 0em 0em 0em;
