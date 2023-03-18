@@ -635,6 +635,12 @@ margin: 0em 0em 0em 5em;
   img.card-img-top.imgdv {
     width: 217%;
     height: 12em;
+    margin: 15em 0em 1em -1em;
+
+}
+  .accordion {
+    width: 27em;
+    margin: 2em 1em 1em -2em;
 }
   
   .crdbdy01.card-body {
@@ -646,7 +652,7 @@ margin: 0em 0em 0em 5em;
 }
   
   .crddash1.card {
-    margin: 8em 1em 2em 35em;
+    margin: 14em 1em 2em 35em;
     width: 20% !important;
 }
   .actvty-frm {
