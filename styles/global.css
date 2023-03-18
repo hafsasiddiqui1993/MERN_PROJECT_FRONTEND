@@ -545,7 +545,46 @@ img.notfoun {
 @media (min-width: 294px) and (max-width: 425px) {
 .card {
     width: 36em !important;
-} 
+}
   
- 
+h1.ft {
+    margin: -4em 2em 0 1.3em;
+    position: absolute; 
+  }
+  
+  h1.ft1 {
+    margin: 2em 0 0 1.3em;
+    position: absolute;
+  }
+  
+  h1.ft2 {
+    margin: 8em 0 2em 1.3em;
+    position: absolute;
+  }
+  
+  h1.ft3 {
+    margin: 8em 0em 3em 6em;
+  }
+  
+img.img3 {
+    width: 21em;
+    margin: 56em 2em 1em 2em;
+}
+  
+ img.img4 {
+    margin: 60em 0em 1em 47em;
+    width: 22em;
+    height: 22em;
+}
+  
+ img.img1 {
+    width: 211%;
+    margin: 15em 0em 1em 18em;
+  }
+
+ .carousel.slide {
+    width: 74em;
+    margin: 11em 2em 1em 0em;
+}
+  
 }
