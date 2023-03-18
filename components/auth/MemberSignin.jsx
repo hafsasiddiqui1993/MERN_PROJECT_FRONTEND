@@ -28,7 +28,22 @@ function MemberSignin() {
 
 
   const validated = () => {
-    const { email, pass } = form;
+    const { email, pass } = member;
+    const newErrors = {};
+if (
+      !m_email ||
+      m_email === "" ||
+      m_email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
+    )
+      newErrors.m_email = "Enter your valid Email";
+    if (!m_pass || m_pass === "" || m_pass.match(/^[a-zA-Z]{8,22}$/))
+      newErrors.m_pass = "Only Letters and length must best Max 8 Chracters";
+
+    return newErrors;
+    
+    
+    
+    
     const vl = {};
 
     if (email) vl.email = "Email matched";
@@ -83,8 +98,22 @@ function MemberSignin() {
       });
 
       const result = await res.json();
+      
+      if(result.errors){
+      
+      result.errors.map((error) => alert(error.msg));
+      
+      }
+   
+      
       window.localStorage.setItem("Token", result.Token);
 
+      
+      else{
+              alert("welcome member");
+
+      
+      }
       window.location.replace("/");
       console.log(result.Token);
     } catch (e) {
