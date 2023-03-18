@@ -612,6 +612,13 @@ margin: 0em 0em 0em 5em;
     margin: 13em 1em 3em 1em;
     height: 40em;
   }
+  
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    margin: 5em 2em 0em 0em;
+    position: absolute;
+    height: 7em;
+    width: 66em;
+}
   select.form-select {
     width: 14em;
 }
@@ -620,7 +627,7 @@ margin: 0em 0em 0em 5em;
 }
   .navdiv {
     width: 100em;
-    margin: 5em 2em 1em 0em;
+    margin: 0em 2em 1em 0;
     position: absolute;
     height: 5em;
 }
