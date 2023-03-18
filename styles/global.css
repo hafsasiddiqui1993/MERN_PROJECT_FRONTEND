@@ -541,3 +541,11 @@ img.notfoun {
   border-color: beige !important;
   background: #4835d4 !important;
 }
+
+@media (min-width: 294px) and (max-width: 425px) {
+.card {
+    width: 36em !important;
+} 
+  
+ 
+}
