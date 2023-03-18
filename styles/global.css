@@ -611,8 +611,11 @@ margin: 0em 0em 0em 5em;
     width: 143%; 
     margin: 13em 1em 3em 1em;
     height: 40em;
-
   }
+  
+  .divsign {
+    margin: 1em;
+}
   .actvty-frmsign {
     width: 125%;
     margin: 10em 1em 3em 1em;
