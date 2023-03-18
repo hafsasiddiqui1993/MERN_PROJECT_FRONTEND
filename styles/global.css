@@ -614,9 +614,15 @@ margin: 0em 0em 0em 5em;
   }
   .editcntrlpro {
     width: 11em!important;
-    margin: 9em 0 4em 15em;
+    margin: 2em 0em 0em 2em;
 
 }
+  
+  form.editpro {
+    margin: 8em 0 4em 13em;
+    width: 26em;
+}
+  
   img.ediproimg {
     width: 122.4%;
     height: 28em;
