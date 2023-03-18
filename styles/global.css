@@ -613,6 +613,11 @@ margin: 0em 0em 0em 5em;
     height: 40em;
 
   }
+  .actvty-frmsign {
+    width: 125%;
+    margin: 10em 1em 3em 1em;
+
+  }
   
   button.actvty-btn.btn.btn-primary {
         margin: 4em 0 0 2em;
