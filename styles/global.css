@@ -604,3 +604,29 @@ margin: 0em 0em 0em 5em;
    width: 100em;
   }
 }
+
+
+@media (min-width: 3204px) and (max-width: 614px) {
+  .actvty-frmsignup {
+    width: 143%; 
+    margin: 13em 1em 3em 1em;
+  }
+  
+  
+  .form-control {
+    width: 56%;
+  }
+  
+  input#m_email, input#m_pass {
+    width: 17em;
+}
+  
+  input#m_email, input#m_pass {
+    width: 17em;
+}
+  
+  
+}
+
+
+
