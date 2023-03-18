@@ -28,25 +28,12 @@ function MemberSignin() {
 
 
   const validated = () => {
-    const { email, pass } = member;
-    const newErrors = {};
-if (
-      !m_email ||
-      m_email === "" ||
-      m_email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)
-    )
-      newErrors.m_email = "Enter your valid Email";
-    if (!m_pass || m_pass === "" || m_pass.match(/^[a-zA-Z]{8,22}$/))
-      newErrors.m_pass = "Only Letters and length must best Max 8 Chracters";
+    const { email, pass } = form;
+    const vl = {};
 
-    return newErrors;
-    
-    
-    
-   
-
-   
-  
+    if (email) vl.email = "Email matched";
+    if (pass) vl.pass = "Password matched";
+    return vl;
   };
   const HandleInputChange = async (e) => {
     console.log(e.target.name);
@@ -58,29 +45,10 @@ if (
 
   const MemberData = async (e) => {
     e.preventDefault();
-    const v1 = validated();
 
-   if (Object.keys(v1).length > 0) {
-    setErrors(v1);
-    return
-   }
+    const vl = validated();
 
     const { m_email, m_pass } = member;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     console.log(member);
     try {
       const res = await fetch(myurl+"api/auth/login", {
@@ -96,26 +64,12 @@ if (
       });
 
       const result = await res.json();
-      
-      if(result.errors){
-      
-      result.errors.map((error) => alert(error.msg));
-      
-      }
-   
-      
       window.localStorage.setItem("Token", result.Token);
 
-      
-      else{
-              alert("welcome member");
-
-      
-      }
       window.location.replace("/");
       console.log(result.Token);
     } catch (e) {
-      alert("Enter Email Or Password");
+      alert("Enter Email Or Password!");
     }
   };
 
