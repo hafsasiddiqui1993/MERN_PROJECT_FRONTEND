@@ -45,10 +45,29 @@ function MemberSignin() {
 
   const MemberData = async (e) => {
     e.preventDefault();
+    const v1 = validated();
 
-    const vl = validated();
+   if (Object.keys(v1).length > 0) {
+    setErrors(v1);
+    return
+   }
 
     const { m_email, m_pass } = member;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
     console.log(member);
     try {
       const res = await fetch(myurl+"api/auth/login", {
