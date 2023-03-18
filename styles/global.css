@@ -617,6 +617,13 @@ margin: 0em 0em 0em 5em;
     margin: 12em 1em 3em 1em;
 
   }
+  
+  .lblactvty.col {
+    width: 24em;
+    margin: 3em 0 -2em 0em;
+}
+  
+  
   a.homenav {
     margin: 2em -5em 1em 7em;
   }
@@ -635,7 +642,8 @@ margin: 0em 0em 0em 5em;
 
 }
   .form-control {
-    width: 44%;
+       width: 60%;
+
   }
   
   input#m_email, input#m_pass {
