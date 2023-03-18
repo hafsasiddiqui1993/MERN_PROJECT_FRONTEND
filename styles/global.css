@@ -615,6 +615,33 @@ margin: 0em 0em 0em 5em;
   select.form-select {
     width: 14em;
 }
+  a.homenavhome {
+    margin: 2em 2em 1em 0em;
+}
+  .navdiv {
+    width: 100em;
+    margin: 5em 2em 1em 0em;
+    position: absolute;
+    height: 5em;
+}
+  
+  img.card-img-top.imgdv {
+    width: 217%;
+    height: 12em;
+}
+  
+  .crdbdy01.card-body {
+    width: 24em;
+}
+  
+  img.card-img-top {
+    width: 24em;
+}
+  
+  .crddash1.card {
+    margin: 8em 1em 2em 35em;
+    width: 20% !important;
+}
   .actvty-frm {
     width: 131%;
     margin: 12em 1em 3em 1em;
