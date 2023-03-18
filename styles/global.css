@@ -612,7 +612,14 @@ margin: 0em 0em 0em 5em;
     margin: 13em 1em 3em 1em;
     height: 40em;
   }
-  
+  img.ediproimg {
+    width: 122.4%;
+    height: 28em;
+    margin: 11em 0 0 3em;
+    position: absolute;
+    border-radius: 2em;
+    opacity: .3;
+}
   .dashhead {
     margin: -4em 2em 1em 58em;
   }
