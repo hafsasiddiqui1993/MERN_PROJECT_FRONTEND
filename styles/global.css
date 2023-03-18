@@ -610,9 +610,14 @@ margin: 0em 0em 0em 5em;
   .actvty-frmsignup {
     width: 143%; 
     margin: 13em 1em 3em 1em;
+    height: 40em;
+
   }
   
-  
+  button.actvty-btn.btn.btn-primary {
+        margin: 4em 0 0 2em;
+
+}
   .form-control {
     width: 44%;
   }
