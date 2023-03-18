@@ -45,9 +45,8 @@ if (
     
    
 
-    if (email) vl.email = "Email matched";
-    if (pass) vl.pass = "Password matched";
-    return vl;
+   
+  
   };
   const HandleInputChange = async (e) => {
     console.log(e.target.name);
