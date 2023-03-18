@@ -117,7 +117,7 @@ if (
       window.location.replace("/");
       console.log(result.Token);
     } catch (e) {
-      alert("Email Or Password Wrong!");
+      alert("Enter Email Or Password");
     }
   };
 
