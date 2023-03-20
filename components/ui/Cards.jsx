@@ -81,7 +81,7 @@ export const Cards = () => {
 
      <Col>
      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_35/2139841/170831-stock-better-running-treadmill-ew-249p.jpg" />
+      <Card.Img variant="top" src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/uncp.sidearmsports.com/images/2023/2/4/Rachel_Carapella_020423.jpg" />
       <Card.Body>
         <Card.Title>Swim</Card.Title>
         <Card.Text>
