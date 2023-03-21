@@ -48,7 +48,7 @@ function Signup() {
     )
       newErrors.m_email = "Enter your valid Email";
     if (!m_pass || m_pass === "" || m_pass.match(/^[a-zA-Z]{8,22}$/))
-      newErrors.m_pass = "Only Letters and length must best Max 8 Chracters";
+      newErrors.m_pass = "Password length must best Max 8 Chracters or digits";
 
     return newErrors;
   };
