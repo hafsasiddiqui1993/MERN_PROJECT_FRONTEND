@@ -114,7 +114,6 @@ const updatememberItem = async(e) => {
           name="m_fullname"
           type="text" placeholder="Enter Full Name"
           value={memberUpdate.m_fullname}
-          onChange={setmemberUpdate}
           />
       
  
@@ -125,7 +124,6 @@ const updatememberItem = async(e) => {
           name="m_add"
           type="text" placeholder="Enter Address"
           value={memberUpdate.m_add}
-          onChange={setmemberUpdate}
 
           />
 
@@ -136,7 +134,6 @@ const updatememberItem = async(e) => {
           name="m_ph"
           type="text" placeholder="Enter Phone" 
           value={memberUpdate.m_ph}
-          onChange={setmemberUpdate}
 
           />
   
@@ -148,7 +145,6 @@ const updatememberItem = async(e) => {
           name="m_email"
           type="email" placeholder="Enter Email" 
           value={memberUpdate.m_email}
-          onChange={setmemberUpdate}
 
           />
   
@@ -160,7 +156,6 @@ const updatememberItem = async(e) => {
           name="m_pass"
           type="password"  placeholder="Enter Password" 
           value={memberUpdate.m_pass}
-          onChange={setmemberUpdate}
 
           />
 
