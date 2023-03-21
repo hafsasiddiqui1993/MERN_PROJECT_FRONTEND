@@ -114,7 +114,7 @@ function Signup() {
   <meta name="description" content='Bootstrap React JS, Signup'>
   </meta>
 </Helmet>
-      <Form className="actvty-frmsignup" onChange={(e) => HandleInputChange(e)}>
+      <Form className="actvty-frmsignup" style={{ height: '41em !important' }} onChange={(e) => HandleInputChange(e)}>
         <Form.Group className="lblactvty">
           <Form.Label>Enter Full Name</Form.Label>
           <Form.Control
